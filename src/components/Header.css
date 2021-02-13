@@ -1,0 +1,132 @@
+.mobile-header {
+    padding: 10px 0;
+    background-color: #353353;
+}
+
+.mobile-header__container {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mobile-header__menu-icon,
+.mobile-header__close-icon {
+    width: 28px;
+    margin-right: 1.5rem;
+}
+
+.mobile-header__close-icon {
+    margin: 10px 15px 15px;
+}
+
+.mobile-header__site-logo h1 {
+    color: #fff;
+    font-size: 32px;
+    margin: 0;
+}
+
+.desktop-header {
+    color: #fff;
+    border-right: 1px solid hsla(0,0%,100%,.1);
+    background-color: #353353;
+    text-align: left;
+    position: fixed;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    min-height: 100vh;
+    top: 0;
+    width: 256px;
+    z-index: 10;
+    transition: all .3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.desktop-header[data-opened="opened"] {
+    transform: translateX(0);
+}
+
+.desktop-header__site-logo {
+    padding: 30px 40px 40px;
+    display: none;
+}
+
+.desktop-header__site-logo h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+    text-align: left;
+}
+
+.desktop-header__dot,
+.mobile-header__dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #ff4c60;
+    margin-left: 4px;
+}
+
+.desktop-header__vertical-menu {
+    list-style: none;
+    padding: 30px 40px 40px;
+    margin-top: 96px;
+    text-align: left;
+}
+
+.desktop-header__nav-item {
+    padding: 12px 0;
+    position: relative;
+    list-style: none;
+    transition: all .2s ease-in-out;
+}
+
+.desktop-header__nav-link {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-family: "Rubik",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    padding: 0;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.desktop-header__nav-link:hover {
+    color: #ffd15c;
+}
+
+.desktop-header__nav-link.active {
+    color: #ffd15c;
+    cursor: pointer;
+}
+
+.desktop-header__nav-icon {
+    height: 16px;
+    margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .desktop-header__site-logo {
+        display: block;
+        transform: translateX(0) !important;
+    }
+
+    .mobile-header__close-icon {
+        display: none;
+    }
+
+    .desktop-header {
+        transform: translateX(0);
+    }
+}

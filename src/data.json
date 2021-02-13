@@ -1,0 +1,156 @@
+{
+    "imagebaseurl": "images/avatar.jpg",
+    "name": "Amene Noori",
+    "role": "Front-End developer",
+    "links": {
+        "github": "https://github.com/amenenoori",
+        "linkedin": "https://www.linkedin.com/in/amenenoori/",
+        "dribbble": "https://dribbble.com/amenenoori",
+        "twitter": "https://twitter.com/amene_noori",
+        "instagram": "https://www.instagram.com/noori.amene"
+    },
+    "header": {
+        "menu": [
+            {
+                "title": "Home",
+                "icon": "images/home.svg"
+            },
+            {
+                "title": "About",
+                "icon": "images/user.svg"
+            },
+            {
+                "title": "Services",
+                "icon": "images/briefcase.svg"
+            },
+            {
+                "title": "Works",
+                "icon": "images/layer-group.svg"
+            },
+            {
+                "title": "Contact",
+                "icon": "images/comments.svg"
+            }
+        ]
+    },
+    "sections": [
+        {
+            "title": "About",
+            "sectionTitle": "About Me",
+            "content": {
+                "skills": [
+                    {
+                        "title": "Development",
+                        "entitySkill": "75%",
+                        "colorCode": "#ffd15c"
+                    },
+                    {
+                        "title": "UI/UX Design",
+                        "entitySkill": "63%",
+                        "colorCode": "#ff4c60"
+                    },
+                    {
+                        "title": "Photography",
+                        "entitySkill": "54%",
+                        "colorCode": "#6c6ce5"
+                    }
+                ],
+                "caption": "I am Amene Noori, web developer from Mashhad, Iran. I have rich experience in web site design and building and customization."
+            }
+        },  
+        {
+            "title": "Services",
+            "sectionTitle": "Services",
+            "items": [
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "images/service-1.svg",
+                        "title": "UI/UX design",
+                        "caption": "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+                        "colorCode": "#6c6ce5",
+                        "shadowColor": "rgba(108, 108, 229, 0.5) 0px 5px 20px 0px"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "images/service-2.svg",
+                        "title": "Web Debelopment",
+                        "caption": "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+                        "colorCode": "#ffd15c",
+                        "shadowColor": "rgba(249, 215, 76, 0.5) 0px 5px 20px 0px"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "images/service-3.svg",
+                        "title": "photography",
+                        "caption": "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+                        "colorCode": "#ff4c60",
+                        "shadowColor": "rgba(249, 123, 139, 0.5) 0px 5px 20px 0px"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Works",
+            "sectionTitle": "Recent Works",
+            "items": [
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "images/works-1.jpg",
+                        "title": "Project Managment"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "images/works-2.jpg",
+                        "title": "Guest App Walkthrough Screens"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "images/works-3.jpg",
+                        "title": "Delivery App Wireframe"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "images/works-4.jpg",
+                        "title": "Onboarding Motivation"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "images/works-5.jpg",
+                        "title": "iMac Mockup Design"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "images/works-6.jpg",
+                        "title": "Game Store App Concept"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Contact",
+            "sectionTitle": "Get in Touch",
+            "items": [
+                {
+                    "type": "form",
+                    "content": ""
+                }
+            ]
+        }
+    ]
+}

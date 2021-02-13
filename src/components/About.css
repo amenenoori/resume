@@ -1,0 +1,175 @@
+.section-about {
+    user-select: none;
+    background: #353353;
+    padding-top: 110px;
+}
+
+.section-about__container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-about__title {
+    color: #fff;
+    font-size: 36px;
+    margin: 0 0 60px 14px;
+    text-align: left;
+    position: relative;
+}
+
+.section-about__title img {
+    position: absolute;
+    left: 0;
+    transform: translate3d(-40%, 0, 0);
+    bottom: 22px;
+}
+
+.section-about__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-about__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 30px;
+}
+
+.section-about__avatar img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-about__overview {
+    box-shadow: 0 5px 20px 0 rgba(69,67,96,.1);
+    background-color: #302f4e;
+    color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.section-about__caption p {
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.section-about__btn {
+    border-radius: 30px;
+    font-family: "Rubik",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    line-height: 1;
+    padding: 12px 28px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.section-about__btn-default {
+    color: #fff;
+    background: #ff4c60;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+}
+
+.section-about__progress {
+    width: 100%;
+}
+
+.section-about__skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-about__skill-info h4 {
+    margin: 0 0 1rem 0;
+}
+
+.section-about__progress-wrapper {
+    margin-top: 20px;
+}
+
+.section-about__skill-progress {
+    width: 100%;
+    height: 7px;
+    border-radius: 15px;
+    margin-bottom: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.section-about__progress-bar {
+    height: 7px;
+}
+
+@media (min-width: 576px) {
+    .section-about__container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-about__container {
+        max-width: 920px;
+    }
+
+    .section-about__avatar-wrapper {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .section-about__avatar {
+        margin: 0;
+    }
+
+    .section-about__overview {
+        flex-wrap: nowrap;
+        flex-basis: 75%;
+        max-width: 75%;
+        position: relative;
+    }
+
+    .section-about__overview:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 15px solid #302f4e;
+        position: absolute;
+        left: 0;
+        transform: translateX(-100%);
+        top: 20%;
+    }
+
+    .section-about__content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .section-about__caption,
+    .section-about__progress {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width:1200px) {
+    .section-about__container {
+        max-width: 1080px;
+    }
+}
